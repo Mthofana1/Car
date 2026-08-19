@@ -12,3 +12,12 @@ fun main() {
         println("Whatever")
     }
 }
+
+fun dataMateBank () {
+
+    val balanc
+
+
+
+
+}
