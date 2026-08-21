@@ -1,32 +1,37 @@
-class car(var balance: Double =0.00,var deposit: Int = 0,var withdrawal: Int = 0) {
+class car(var balance: Double =0.00,var deposit: Double = 0.0,var withdrawal: Double = 0.0) {
 
+    fun checkBalance() {
 
-fun depositMoney(amount: Double){
-    balance+=deposit
-    if (balance > 0){
-        println("successfully deposited")
-
-
-    }else {
-        println("deposit was unsuccessful")
-    }
-
-}
-    fun widrawMoney (amount : Double) {
-        balance-=withdrawal
-        if (balance >= withdrawal){
-            println("withrawal successful")
-
-        }else{
-            println("insufficient funds")
+        if (balance == balance) {
+            println("You balance is R$balance")
         }
 
+    }
+
+
+    fun depositMoney() {
+
+        if (deposit > 0) {
+            deposit += balance
+            println("Your deposit was successful & your new balance is R$balance")
+
+        } else {
+            println("Your deposit was unsuccessful please try again !! ")
+        }
 
     }
 
-    fun checkBalnce(amount: Double) {
 
-        println(balance)
+fun withdrawMoney() {
+
+    if (withdrawal>0){
+        withdrawal-=balance
+        println("Withdrawal was successful & your new balance is R$balance")
+
+    }else{
+        println("Insufficient funds !!")
+    }
+
     }
 
 }
