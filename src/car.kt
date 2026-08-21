@@ -58,6 +58,18 @@ class week(private val days: Int=7) {
 
     }
 
+    fun fourLoop () {
+
+        /*print no from 1 to 3000*/
+
+        for (i in 1.. 1000){
+            println(i)
+        }
+
+
+
+    }
+
 
 
 

@@ -2,7 +2,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
 
-
+    forLoop()
     dataMateBank(2200.0 , deposit = 800 , withdrawal = 4000)
 
 }
@@ -34,6 +34,12 @@ fun dataMateBank (balance : Double = 0.00,deposit : Int =0, withdrawal : Int = 0
 
     }
 
+fun forLoop () {
 
+    for (i in 1 ..1000){
+        println(i)
+    }
+
+}
 
 
