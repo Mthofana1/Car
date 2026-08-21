@@ -35,3 +35,30 @@ fun withdrawMoney() {
     }
 
 }
+class week(private val days: Int=7) {
+
+    fun daysOFtheWeek (){
+
+        when(days){
+            1 -> println("Day $days is Monday")
+
+            2 -> println("Day $days is Tuesday")
+
+            3 -> println("Day $days is Wednesday")
+
+            4 -> println("Day $days is Thursday")
+
+            5 -> println("Day $days is Friday")
+
+            6 -> println("Day $days is Saturday")
+
+            7 -> println("Day $days is Sunday")
+
+        }
+
+    }
+
+
+
+
+}
