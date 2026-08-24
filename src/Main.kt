@@ -3,8 +3,10 @@
 fun main() {
 
     forLoop()
-    dataMateBank(2200.0 , deposit = 800 , withdrawal = 4000)
-
+    dataMateBank()
+    val students = studentMarks()
+    students.displayMarks()
+    
 }
 fun dataMateBank (balance : Double = 0.00,deposit : Int =0, withdrawal : Int = 0) {
 

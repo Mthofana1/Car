@@ -134,3 +134,28 @@ fun main (){
     students.displayMarks()
 
 }
+
+class NumberOfMarks {
+
+fun checkmarks() {
+
+
+    while (true) {
+        print("enter mark :")
+        val marks = readlnOrNull()?.toIntOrNull()!!
+
+        if (marks >= 75) {
+            println("Excellent")
+
+        } else if (marks >= 50) {
+            println("Good")
+
+        } else if (marks >= 30) {
+            println("Average")
+
+        } else {
+            println("Fail")
+        }
+    }
+}
+}
