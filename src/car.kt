@@ -114,3 +114,23 @@ class bankAccount (amount: Double,balance: Double,deposit: Double,withdrawal: Do
 
     }
 }
+
+class studentMarks {
+
+    val marks = mapOf("gary" to 75, "wendy" to 27, "zakes" to 55, "sam" to 21)
+
+
+fun displayMarks() {
+
+    for ((name, mark) in marks) {
+        println("$name:$mark")
+    }
+}
+}
+
+fun main (){
+
+   val students = studentMarks()
+    students.displayMarks()
+
+}
