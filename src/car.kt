@@ -70,7 +70,47 @@ class week(private val days: Int=7) {
 
     }
 
+}
 
+fun numbers () {
 
+    var number = 1
+    while ( number <= 100){
+        println(number)
+        number++
+    }
 
+}
+
+class bankAccount (amount: Double,balance: Double,deposit: Double,withdrawal: Double,) {
+
+    var balance =0.00
+
+    fun deposit(amount: Double) {
+
+        if(amount > 0) {
+            balance += amount
+            println("Deposited :$amount")
+
+        }else{
+            println("Invalid deposit")
+        }
+    }
+
+    fun withdraw (amount : Double) {
+
+        if (amount >= 0 && amount <= balance){
+            balance =- amount
+            println("Withdrawal was successful & your new balance is R$balance")
+
+        }else {
+            println("Insufficient funds ")
+        }
+
+    }
+    fun checkBalance (){
+
+        println("Your current balance is E$balance")
+
+    }
 }
